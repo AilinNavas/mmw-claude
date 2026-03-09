@@ -3,10 +3,10 @@ import { WhatsAppIcon } from "./icons"
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 md:px-[60px] pt-[120px] pb-20 relative overflow-hidden text-center">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 md:px-15 pt-30 pb-20 relative overflow-hidden text-center">
       {/* Radial green glow */}
       <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] rounded-full pointer-events-none"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-225 h-150 rounded-full pointer-events-none"
         style={{
           background: "radial-gradient(ellipse at 50% 0%, rgba(37,211,102,0.12) 0%, transparent 65%)",
         }}
@@ -23,14 +23,14 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-1 max-w-[860px]">
+      <div className="relative z-1 max-w-215">
         {/* Eyebrow */}
         <div
           className="inline-flex items-center gap-2 text-[10px] font-semibold tracking-[3px] uppercase text-mm-green bg-mm-green-xs border border-mm-green-dim px-4 py-1.5 rounded-full mb-8"
           style={{ animation: "fadeUp 0.6s ease both" }}
         >
           <span
-            className="w-[5px] h-[5px] rounded-full bg-mm-green"
+            className="w-1.25 h-1.25 rounded-full bg-mm-green"
             style={{ animation: "blink 2s ease-in-out infinite" }}
           />
           {"Solucion omnicanal para PyMEs"}
@@ -38,7 +38,7 @@ export function Hero() {
 
         {/* Title */}
         <h1
-          className="font-sans text-[clamp(42px,7vw,82px)] font-black italic leading-[1.0] tracking-[-2.5px] mb-[26px] uppercase text-mm-white"
+          className="font-sans text-[clamp(42px,7vw,82px)] font-black italic leading-none tracking-[-2.5px] mb-6.5 uppercase text-mm-white"
           style={{ animation: "fadeUp 0.6s 0.1s ease both" }}
         >
           Cada mensaje
@@ -51,7 +51,7 @@ export function Hero() {
 
         {/* Subtitle */}
         <p
-          className="text-[16px] md:text-[18px] font-light text-mm-grey leading-[1.65] max-w-[620px] mx-auto mb-11"
+          className="text-[16px] md:text-[18px] font-light text-mm-grey leading-[1.65] max-w-155 mx-auto mb-11"
           style={{ animation: "fadeUp 0.6s 0.2s ease both" }}
         >
           {"Publicidad en redes + WhatsApp con IA y automatizaciones."}
@@ -69,7 +69,7 @@ export function Hero() {
             className="inline-flex items-center gap-2.5 bg-mm-green text-[#050f0a] font-sans text-[15px] font-bold px-8 py-4 rounded-full no-underline transition-all duration-200 hover:-translate-y-0.5"
             style={{ boxShadow: "0 8px 32px rgba(37,211,102,0.35)" }}
           >
-            <WhatsAppIcon className="w-[18px] h-[18px]" />
+            <WhatsAppIcon className="w-4.5 h-4.5" />
             Empezar ahora
           </Link>
           <Link

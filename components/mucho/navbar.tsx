@@ -6,9 +6,9 @@ import Image from "next/image"
 import logo from "../../public/logo.png"
 
 const links = [
-  { href: "#problema", label: "El problema" },
-  { href: "#como-funciona", label: "Cómo funciona" },
-  { href: "#servicios", label: "Servicios" },
+  { href: "/#problema", label: "El problema" },
+  { href: "/#como-funciona", label: "Cómo funciona" },
+  { href: "/#servicios", label: "Servicios" },
   { href: "/sistema", label: "Oferta" },
 ]
 
@@ -26,8 +26,7 @@ export function Navbar() {
             alt="Mucho Logo"
             width={180}
             height={90}
-            className="h-9 w-auto md:h-16"
-            priority
+           className="h-14 w-auto md:h-16"
           />
         </Link>
 
@@ -47,8 +46,8 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <Link
-          href="https://wa.me/598XXXXXXXX"
-          className="hidden rounded-full bg-mm-green px-6 py-2.5 text-[14px] font-semibold text-[#050f0a] transition-all duration-200 hover:-translate-y-[1px] md:inline-block"
+          href="https://wa.me/543519046945?text=Hola%20Joel%2C%20quiero%20saber%20más%20sobre%20Mucho%20Marketing"
+          className="hidden rounded-full bg-mm-green px-6 py-2.5 text-[14px] font-semibold text-[#050f0a] transition-all duration-200 hover:-translate-y-px md:inline-block"
           style={{
             boxShadow: "0 6px 25px rgba(37,211,102,0.25)",
           }}
@@ -59,23 +58,17 @@ export function Navbar() {
         {/* Hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-1.25 md:hidden"
           aria-label="Toggle Menu"
         >
           <span
-            className={`block h-[2px] w-6 bg-mm-white transition-all duration-300 ${
-              mobileOpen ? "translate-y-[7px] rotate-45" : ""
-            }`}
+            className={`block h-0.5 w-6 bg-mm-white transition-all duration-300 ${mobileOpen ? "translate-y-1.75 rotate-45" : ""}`}
           />
           <span
-            className={`block h-[2px] w-6 bg-mm-white transition-all duration-300 ${
-              mobileOpen ? "opacity-0" : ""
-            }`}
+            className={`block h-0.5 w-6 bg-mm-white transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`}
           />
           <span
-            className={`block h-[2px] w-6 bg-mm-white transition-all duration-300 ${
-              mobileOpen ? "-translate-y-[7px] -rotate-45" : ""
-            }`}
+            className={`block h-0.5 w-6 bg-mm-white transition-all duration-300 ${mobileOpen ? "-translate-y-1.75 -rotate-45" : ""}`}
           />
         </button>
       </div>
@@ -83,7 +76,7 @@ export function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+          mobileOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="flex flex-col gap-5 px-6 pb-6 pt-2 bg-[rgba(5,15,10,0.95)] backdrop-blur-xl border-t border-mm-border">
@@ -100,7 +93,7 @@ export function Navbar() {
           ))}
 
           <Link
-            href="https://wa.me/598XXXXXXXX"
+            href="https://wa.me/543519046945?text=Hola%20Joel%2C%20quiero%20saber%20más%20sobre%20Mucho%20Marketing"
             onClick={() => setMobileOpen(false)}
             className="mt-2 rounded-full bg-mm-green py-3 text-center text-[15px] font-semibold text-[#050f0a]"
           >
