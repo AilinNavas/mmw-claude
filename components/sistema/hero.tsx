@@ -11,8 +11,18 @@ export function Hero() {
           {/* TEXTO */}
           <div className="text-center lg:text-left">
 
+            {/* ETIQUETA */}
+            <div className="flex justify-center lg:justify-start mb-6">
+              <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-mm-green/40 bg-mm-green/10 backdrop-blur-sm">
+                <span className="w-2 h-2 rounded-full bg-mm-green animate-pulse"></span>
+                <span className="text-[12px] md:text-[13px] tracking-[0.25em] font-medium text-mm-green uppercase">
+                  Prueba gratuita de 14 días
+                </span>
+              </div>
+            </div>
+
             {/* Título */}
-            <h1 className="font-sans text-[clamp(42px,7vw,82px)] font-black italic leading-[1.0] tracking-[-2.5px] uppercase mb-6">
+            <h1 className="font-sans text-[clamp(42px,7vw,82px)] font-black italic leading-none tracking-[-2.5px] uppercase mb-6">
 
               <span className="text-mm-green block">
                 Tus clientes están 
@@ -51,7 +61,7 @@ export function Hero() {
               playsInline
               preload="metadata"
               aria-hidden="true"
-              className="w-full max-w-xs md:max-w-sm aspect-[9/19] pointer-events-none"
+              className="w-full max-w-xs md:max-w-sm aspect-9/19 pointer-events-none"
             >
               <source src="/videos/Hero-video.webm" type="video/webm" />
             </video>

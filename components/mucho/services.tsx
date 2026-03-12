@@ -46,7 +46,8 @@ const strategyBullets = [
 
 export function Services() {
   return (
-    <section id="servicios" className="px-6 md:px-[60px] py-[120px] max-w-[1200px] mx-auto relative z-1">
+    <section id="servicios" className="px-6 md:px-15 py-30 max-w-300
+     mx-auto relative z-1">
       {/* Header */}
       <div className="mb-14">
         <SectionLabel className="reveal">Que incluye</SectionLabel>
@@ -74,13 +75,13 @@ export function Services() {
             }}
           >
             <div className="w-12 h-12 rounded-xl bg-mm-green-xs border border-mm-green-dim flex items-center justify-center mb-5">
-              <card.icon className="w-[22px] h-[22px]" />
+              <card.icon className="w-5.5 h-5.5" />
             </div>
             <div className="font-sans text-[17px] font-bold mb-2.5 tracking-[-0.2px] text-mm-white">
               {card.name}
             </div>
             <div className="text-[13px] text-mm-grey leading-[1.65]">{card.desc}</div>
-            <div className="flex flex-wrap gap-1.5 mt-[18px]">
+            <div className="flex flex-wrap gap-1.5 mt-4.5">
               {card.tags.map((tag) => (
                 <span
                   key={tag}
@@ -100,7 +101,7 @@ export function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="w-12 h-12 rounded-xl bg-mm-green-xs border border-mm-green-dim flex items-center justify-center mb-5">
-                <UsersIcon className="w-[22px] h-[22px]" />
+                <UsersIcon className="w-5.5 h-5.5" />
               </div>
               <div className="font-sans text-[17px] font-bold mb-2.5 tracking-[-0.2px] text-mm-white">
                 {"Estrategia y Direccion de Cuenta"}

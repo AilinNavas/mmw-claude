@@ -52,7 +52,7 @@ export function Navbar() {
             boxShadow: "0 6px 25px rgba(37,211,102,0.25)",
           }}
         >
-          Hablar con Joel
+          Probar gratis →
         </Link>
 
         {/* Hamburger */}
@@ -97,7 +97,7 @@ export function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="mt-2 rounded-full bg-mm-green py-3 text-center text-[15px] font-semibold text-[#050f0a]"
           >
-            Hablar con Joel
+           Probar gratis →
           </Link>
 
         </div>

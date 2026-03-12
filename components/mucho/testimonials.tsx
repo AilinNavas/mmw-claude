@@ -37,9 +37,9 @@ export function Testimonials() {
   return (
     <section
       id="testimonios"
-      className="px-6 md:px-[60px] py-[120px] bg-[rgba(255,255,255,0.01)] border-t border-b border-mm-border relative z-1"
+      className="px-6 md:px-15 py-30 bg-[rgba(255,255,255,0.01)] border-t border-b border-mm-border relative z-1"
     >
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <SectionLabel center className="reveal">
@@ -55,7 +55,7 @@ export function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className={`reveal reveal-delay-${i + 1} rounded-2xl p-[30px] flex flex-col gap-5 border transition-colors duration-300 hover:border-[rgba(37,211,102,0.2)] ${
+              className={`reveal reveal-delay-${i + 1} rounded-2xl p-7.5 flex flex-col gap-5 border transition-colors duration-300 hover:border-[rgba(37,211,102,0.2)] ${
                 t.featured
                   ? "border-[rgba(37,211,102,0.25)]"
                   : "border-mm-border bg-[rgba(255,255,255,0.02)]"
@@ -85,7 +85,7 @@ export function Testimonials() {
               {/* Author */}
               <div className="flex items-center gap-3">
                 <div
-                  className="w-[38px] h-[38px] rounded-full flex items-center justify-center font-sans text-sm font-bold text-[#050f0a] shrink-0"
+                  className="w-9.5 h-9.5 rounded-full flex items-center justify-center font-sans text-sm font-bold text-[#050f0a] shrink-0"
                   style={{
                     background: "linear-gradient(135deg, #25D366, #0d5c2e)",
                   }}
