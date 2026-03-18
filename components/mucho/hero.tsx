@@ -100,7 +100,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div
-        className=" absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-mm-grey2 text-[10px] tracking-[2px] uppercase hidden md:flex"
+        className=" absolute bottom-0 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-mm-grey2 text-[10px] tracking-[2px] uppercase hidden md:flex"
         style={{ animation: "fadeUp 0.6s 0.6s ease both" }}
       >
         <div
